@@ -66,3 +66,4 @@ CTA clicks are also recorded on the completed response row through `POST /api/le
 ## Deployment checkpoint
 
 The codebase is ready for its own Vercel project. It requires only the standalone Audit environment variables in `.env.example`. The Supabase migration is included for the intended FluenceOS Supabase project. See `docs/DEPLOYMENT.md` for production setup and smoke-testing steps.
+Deployment trigger
