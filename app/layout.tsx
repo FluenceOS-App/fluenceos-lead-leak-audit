@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 import GoogleAnalytics from "./GoogleAnalytics";
+import CookieConsent from "./CookieConsent";
 
 export const metadata: Metadata = {
   title: "Lead Leak Audit | FluenceOS",
@@ -31,7 +32,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}<GoogleAnalytics /></body>
+      <body>
+        {children}
+        <CookieConsent />
+        <GoogleAnalytics />
+      </body>
     </html>
   );
 }
