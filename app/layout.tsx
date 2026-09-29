@@ -5,7 +5,11 @@ import GoogleAnalytics from "./GoogleAnalytics";
 
 export const metadata: Metadata = {
   title: "Lead Leak Audit | FluenceOS",
-  description: "Find where potential clients may be slipping through the cracks.",
+  description:
+    "Find where potential clients may be slipping through the cracks.",
+  alternates: {
+    canonical: "https://audit.fluenceos.io/",
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
